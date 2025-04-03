@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Postres Dulces y Salados</title>
+    <link rel="stylesheet" href="historia.css"> 
+</head>
+<body>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Misión: "Dulce Luna"</h2>
+			<img src="img/pastel50.jpg" width="150" height="150">
+            <p>Misión
+En "Dulce Luna", nos esforzamos por hacer la vida de nuestros clientes más deliciosa y especial, ofreciendo productos de repostería fina de alta calidad y higiene, con el toque casero que nos distingue. Queremos ser parte de los momentos más especiales de nuestras familias y amigos, brindándoles un valor agregado en cada ocasión.
+
+Nuestro objetivo es proporcionar experiencias gastronómicas únicas y memorables, que satisfagan los paladares más exigentes y creen recuerdos duraderos. Queremos ser la opción preferida para celebrar cualquier ocasión, ya sea un cumpleaños, una boda, un aniversario o simplemente un día especial.
+
+En "Dulce Luna", nos comprometemos a utilizar solo los ingredientes más frescos y de alta calidad, y a preparar nuestros productos con amor y dedicación. Queremos que cada bocado sea una experiencia sensorial que deleite el paladar y satisfaga el alma.
+
+Visión
+Nuestra visión es consolidarnos como una de las pastelerías más reconocidas y apreciadas en México, con una presencia sólida en todo el país. Queremos conquistar el paladar de las familias mexicanas con nuestras deliciosas recetas originales y ser la opción preferida para celebrar cualquier ocasión.</p>
+            
+         
+
+        </section>
+    </main>
+
+</body>
+</html>
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

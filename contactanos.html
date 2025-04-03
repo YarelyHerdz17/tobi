@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Contactanos </title>
+    <link rel="stylesheet" href="contactanos.css"> 
+</head>
+<body>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+			
+			<form id="form1"
+name="form1" method="post"
+action="">
+
+</form>
+
+<label>Nombre:<br/>
+<input type="text"
+name="textfield" value=""
+size="30"/>
+</label>
+
+
+<form id="form1"
+name="form1" method="post"
+action="">
+
+</form>
+
+<label>Correo Electrónico:<br/>
+<input type="text"
+name="textfield" value=""
+size="30"/>
+</label>
+
+
+<form id="form1"
+name="form1" method="post"
+action="">
+
+</form>
+
+<label>Teléfono:<br/>
+<input type="text"
+name="textfield" value=""
+size="30"/>
+</label>
+
+<p>Mensaje</br>
+<textarea id="message" class="input" name="message" rows="7"
+cols="30"></textarea>
+</p>
+
+<p>
+<input name="submit" type="submit" id="submit_button"
+value="Enviar"/>
+</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29746.924275737965!2d-98.79452629185154!3d21.256993644943158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d6ea629521c211%3A0x1716958385862cf!2s79960%20Tamazunchale%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1743600090530!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+
+<p> <li> Telefono: 483 123 09 56 </li>
+    <li> WhatsApp: 483 109 35 67 </li>
+
+	</p>		
+   <div class="piedepagina">
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </div>
+</body>
+</html>  

@@ -1,0 +1,232 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado */
+header {
+    background-color: #ff99cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Menú */
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Submenú */
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffccff;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Sección de productos */
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 15px;
+}
+
+.categoria {
+    width: 30%;
+    margin: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.categoria h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.categoria p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Estilo de las imágenes y su contenedor */
+.producto {
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.precio {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Estilos para los elementos en categorías */
+#dulce, #salado, #frutas, #galletas, #helados, #postres-especiales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: center;
+    width: 30%;
+}
+
+.producto .info {
+    margin-top: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .categoria {
+        width: 45%;
+    }
+
+    .producto {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categoria {
+        width: 100%;
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
+
+/* Estilo de las imágenes dentro de las categorías */
+.categoria img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 1.5s ease; /* Transición suave para el zoom */
+}
+
+.categoria img:hover {
+    transform: scale(3.0); /* Aplica el zoom a las imágenes */
+}
+
+   footer {
+    background-color:#FF4646;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#pastel {
+display:grid;
+grid-template-columns:repeat(6,1fr);
+width:90%;
+margin:5%;
+grid-gap:10px;
+}
+
+#pastel img {
+width:100%;
+transition:all 300ms;
+position:relative;
+}
+
+#pastel img:hover{
+tr
+
+/* Estilo para el contenedor de las categorías */
+.categoria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas, ajustable según el espacio */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de cada celda */
+    margin-bottom: 20px; /* Espacio entre las categorías */
+}
+
+/* Estilo para las imágenes dentro de las categorías */
+.categoria img {
+    width: 100%; /* Las imágenes ocuparán el 100% del espacio disponible */
+    transition: all 300ms ease; /* Suaviza la transición al hacer zoom */
+    border-radius: 10px; /* Bordes redondeados para un look más moderno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de las imágenes */
+}
+
+/* Efecto de zoom al pasar el mouse sobre las imágenes */
+.categoria img:hover {
+    transform: scale(1.15); /* Aumenta el tamaño de la imagen un 15% */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Estilos para la sección de categorías */
+#categorias {
+    padding: 30px 10%; /* Agrega un espacio a los lados de la sección */
+    text-align: center; /* Centra los títulos y textos */
+}
+
+#categorias h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#categorias .categoria h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#categorias .categoria p {
+    font-size: 1.1em;
+    color: #777;
+}

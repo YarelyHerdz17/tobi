@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffaf0;
+}
+
+.header-bg {
+    background: #ff9999;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ffcccb;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.menu li:hover > a {
+    background: #ff9999;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffcccb;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.submenu li a:hover {
+    background: #ff9999;
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .submenu {
+        position: static;
+    }
+}
+
+
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Sección de productos */
+#productos {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#productos h2 {
+    text-align: center;
+    color:#339999; /* Color principal */
+}
+
+/* Botones */
+button {
+    background-color:#00CCCC/* Color principal */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:#CC66CC; /* Color más oscuro al pasar el ratón */
+}
+
+/* Imágenes */
+#productos img {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las secciones ocultas */
+#pastelesPersonalizados, #pastelesFrutas, #pastelesCrema {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#pastelesPersonalizados h3, #pastelesFrutas h3, #pastelesCrema h3 {
+    color:#00CCCC;
+    text-align: center;
+}
+
+footer {
+    background-color:#FF4646;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#pastel {
+display:grid;
+grid-template-columns:repeat(6,1fr);
+width:90%;
+margin:5%;
+grid-gap:10px;
+}
+
+#pastel img {
+width:100%;
+transition:all 300ms;
+position:relative;
+}
+
+#pastel img:hover{
+tr

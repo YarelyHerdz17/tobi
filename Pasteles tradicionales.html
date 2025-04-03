@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css"> 
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+<!--
+.Estilo1 {color: #0066FF}
+.Estilo2 {color: #FF6666}
+-->
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+			<nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    
+					 <li class="dropdown">
+                        <a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="Pasteles clasicos.html">Pasteles clasicos</a></li>
+                            <li><a href="Pasteles tradicionales.html">Pasteles tradicionales</a></li>
+                            <li><a href="Pasteles de chocolate.html">Pasteles de chocolate</a></li>
+                            <li><a href="pasteles de 3 leches.html">pasteles de 3 leches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+      </div>
+    </header>
+
+
+   <div class="categoria" id="dulce">
+                <h3 class="Estilo1">Pasteles tradicionales</h3>
+
+
+
+<p>
+Los pasteles tradicionales son una parte importante de la cultura y la tradición de muchos países. Han sido pasados de generación en generación y son característicos de una región o país en particular.
+
+Cada pastel tradicional tiene su propia historia y significado. Algunos se preparan para celebrar ocasiones especiales, mientras que otros se preparan para recordar eventos históricos o honrar a personas importantes.
+
+Los pasteles tradicionales suelen ser simples en su preparación, pero ricos en sabor y textura. A menudo se utilizan ingredientes frescos y de alta calidad, como frutas, nueces y chocolates.
+</p>
+
+
+				<p class="Estilo2">"Disfruta de la tradición en cada bocado"</p>
+                <img src="img/tra1.jpg" width="200" height="200">
+                <img src="img/tra2.jpg" width="200" height="200">
+                <img src="img/tra3.jpg" width="200" height="200">
+				<img src="img/tra4.jpg" width="200" height="200">
+				<img src="img/tra5.jpg" width="200" height="200">
+				<img src="img/tra6.jpg" width="200" height="200">
+                <img src="img/tra7.jpg" width="200" height="200">
+                <img src="img/tra8.jpg" width="200" height="200">
+				<img src="img/tra9.jpg" width="200" height="200">
+				<img src="img/tra10.jpg" width="200" height="200">
+			    <img src="img/tra11.jpg" width="200" height="200">
+				<img src="img/tra12.jpg" width="200" height="200">
+</div>
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

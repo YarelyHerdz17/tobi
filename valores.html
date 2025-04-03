@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css">
+    <style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+-->
+    </style>
+</head>
+<body>
+
+ <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+	   <p>   
+	   <p align="center" class="Estilo1">Valores
+	      En "Dulce Luna", nos guiamos por los siguientes valores:
+<li>1. Confianza: Creemos en la importancia de generar confianza con nuestros clientes y colaboradores.</li>
+<li>2. Comunicación: Nos esforzamos por mantener una comunicación abierta y honesta con todos nuestros stakeholders.</li>
+<li>3. Honestidad: Nos comprometemos a actuar con integridad y honestidad en todas nuestras acciones.</li>
+<li>4. Respeto: Valoramos el respeto mutuo entre nuestros colaboradores, clientes y proveedores.</li>
+<li>5. Pasión: Nos apasiona lo que hacemos y nos esforzamos por transmitir esa pasión en cada uno de nuestros productos.</li>
+<li>6. Empatía: Nos esforzamos por entender las necesidades y preferencias de nuestros clientes.</li>
+<li>7. Responsabilidad: Nos comprometemos a actuar de manera responsable con nuestro entorno y nuestra comunidad.</li>
+<li>8. Trabajo en equipo: Creemos en la importancia del trabajo en equipo para lograr nuestros objetivos.</li>
+<li>9. Flexibilidad: Nos esforzamos por ser flexibles y adaptarnos a los cambios del mercado y las necesidades de nuestros clientes.</li>
+<li>10. Superación: Nos esforzamos por superarnos a nosotros mismos y mejorar continuamente nuestros productos y servicios.</li></p>
+
+   <img src="img/pasteleria60.jpg" alt="logo" width="200" height="200">
+   <img src="img/pasteleria70.jpg" alt="logo" width="200" height="200">
+   <img src="img/pasteleria62.jpg" alt="logo" width="200" height="200">
+ssss
+    </main>
+ 
+   <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

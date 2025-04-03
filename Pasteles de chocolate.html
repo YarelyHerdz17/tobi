@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css"> 
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+<!--
+.Estilo1 {color: #804040}
+.Estilo2 {color: #944949}
+-->
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+			<nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    
+					 <li class="dropdown">
+                        <a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="Pasteles clasicos.html">Pasteles clasicos</a></li>
+                            <li><a href="Pasteles tradicionales.html">Pasteles tradicionales</a></li>
+                            <li><a href="Pasteles de chocolate.html">Pasteles de chocolate</a></li>
+                            <li><a href="pasteles de 3 leches.html">pasteles de 3 leches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+      </div>
+    </header>
+
+
+ <div class="categoria" id="dulce">
+                <h3 class="Estilo2">Pasteles de chocolate</h3>
+
+<p>
+Los pasteles de chocolate son un tipo de pastel que utiliza chocolate como ingrediente principal. Son ricos en sabor y textura, y son a menudo servidos en ocasiones especiales como cumpleaños, bodas y fiestas.
+
+Existen muchos tipos de pasteles de chocolate, cada uno con su propia característica y sabor. Algunos de los más populares son:
+
+<li>Pastel de chocolate negro: un pastel rico y decadente hecho con chocolate negro.</li>
+<li>Pastel de chocolate con leche: un pastel suave y cremoso hecho con chocolate con leche.</li>
+<li>Pastel de chocolate blanco: un pastel dulce y cremoso hecho con chocolate blanco.</li>
+<li>Pastel de chocolate con nueces: un pastel rico y crujiente hecho con chocolate y nueces.</li>
+
+Los pasteles de chocolate pueden ser decorados de muchas maneras, como con chocolate derretido, crema chantillí o frutas frescas. También pueden ser acompañados de bebidas como café, té o leche.
+
+En resumen, los pasteles de chocolate son un tipo de pastel delicioso y versátil que puede ser disfrutado en cualquier ocasión. ¡Buen provecho!
+</p>
+
+				<p class="Estilo1">"Disfruta del sabor intenso del chocolate en cada bocado"</p>
+                <img src="img/cho1.jpg" width="200" height="200">
+                <img src="img/cho2.jpg" width="200" height="200">
+                <img src="img/cho3.jpg" width="200" height="200">
+				<img src="img/cho4.jpg" width="200" height="200">
+				<img src="img/cho5.jpg" width="200" height="200">
+				<img src="img/cho6.jpg" width="200" height="200">
+                <img src="img/cho7.jpg" width="200" height="200">
+                <img src="img/cho8.jpg" width="200" height="200">
+				<img src="img/cho9.jpg" width="200" height="200">
+				<img src="img/cho10.jpg" width="200" height="200">
+			    <img src="img/cho11.jpg" width="200" height="200">
+				<img src="img/cho12.jpg" width="200" height="200">
+</div>
+
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

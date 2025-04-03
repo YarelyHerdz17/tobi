@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado */
+.header-bg {
+    background: #ff9999;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ffcccb;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.menu li:hover > a {
+    background: #ff9999;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ff9999;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.submenu li a:hover {
+    background: #ff9999;
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+    border-bottom: 1px solid #ddd;
+	text-align:center;
+}
+
+section h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+section h3 {
+    color: #444;
+    font-size: 22px;
+}
+
+section p, section ul {
+    font-size: 18px;
+    color: #555;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .submenu {
+        position: static;
+    }
+}
+
+
+footer {
+    background-color:#FF4646;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#pastel {
+display:grid;
+grid-template-columns:repeat(6,1fr);
+width:90%;
+margin:5%;
+grid-gap:10px;
+}
+
+#pastel img {
+width:100%;
+transition:all 300ms;
+position:relative;
+}
+
+#pastel img:hover{
+tr

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css">
+    <style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+-->
+    </style>
+</head>
+<body>
+
+ <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<p> 
+Nuestra visión es consolidarnos como una de las pastelerías más reconocidas y apreciadas en México, con una presencia sólida en todo el país. Queremos conquistar el paladar de las familias mexicanas con nuestras deliciosas recetas originales y ser la opción preferida para celebrar cualquier ocasión.
+
+Nos enfocamos en crear una experiencia única y memorable para nuestros clientes, ofreciendo productos de alta calidad y servicio excepcional. Queremos que cada visita a "Dulce Luna" sea una experiencia especial, que nuestros clientes recuerden y compartan con sus seres queridos.    
+	<p>    
+	<p class="Estilo1">Nuestra visión se basa en los siguientes pilares:
+          <li>1. Calidad: Nos comprometemos a ofrecer productos de alta calidad, frescos y deliciosos.</li>
+<li>2. Innovación: Queremos ser pioneros en la creación de nuevos productos y experiencias para nuestros clientes.</li>
+<li>3. Servicio: Nos enfocamos en brindar un servicio excepcional, amable y atento a las necesidades de nuestros clientes.</li>
+<li>4. Comunidad: Queremos ser una parte activa de la comunidad, apoyando eventos y causas locales.</li>
+<li>5. Sostenibilidad: Nos comprometemos a reducir nuestro impacto ambiental y a promover prácticas sostenibles en nuestra operación.</li>
+
+<li>Al alcanzar nuestra visión, queremos:</li>
+
+<li>- Ser reconocidos como una de las mejores pastelerías de México.</li>
+<li>- Tener una presencia sólida en todo el país.</li>
+<li>- Ser la opción preferida para celebrar cualquier ocasión.</li>
+<li>- Crear una experiencia única y memorable para nuestros clientes.</li>
+<li>- Ser una parte activa de la comunidad y promover prácticas sostenibles.</li></p>
+
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

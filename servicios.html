@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css"> 
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			<img src="img/pastel50.jpg" width="150" height="150">
+			<nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    
+					 <li class="dropdown">
+                        <a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="Pasteles clasicos.html">Pasteles clasicos</a></li>
+                            <li><a href="Pasteles tradicionales.html">Pasteles tradicionales</a></li>
+                            <li><a href="Pasteles de chocolate.html">Pasteles de chocolate</a></li>
+                            <li><a href="pasteles de 3 leches.html">pasteles de 3 leches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+      </div>
+    </header>
+
+<main>
+        <section id="categorias">
+            <h2>Clasificación de Productos</h2>
+          <div class="categoria" id="dulce">
+                <h3>Dulces</h3>
+				<p>Deliciosos dulces que te harán sonreír.</p>
+                   <img src="img/img1.jpg" width="200" height="200">
+              <img src="img/img2.jpg" width="200" height="200">
+                <img src="img/img3.jpg" width="200" height="200">
+				<img src="img/img4.jpg" width="200" height="200">
+				<img src="img/img5.jpg" width="200" height="200">
+            </div>
+            <div class="categoria" id="salado">
+                <h3>Salados</h3>
+                <p>Un toque salado para todos los gustos.</p>
+				<img src="img/img6.jpg" width="200" height="200">
+                <img src="img/img7.jpg" width="200" height="200">
+                <img src="img/img8.jpg" width="200" height="200">
+				<img src="img/img9.jpg" width="200" height="200">
+				<img src="img/img10.jpg" width="200" height="200">
+            </div>
+            <div class="categoria" id="frutas">
+                <h3>De Frutas</h3>
+                <p>Refrescantes y saludables opciones con frutas.</p>
+                <img src="img/img11.jpg" width="200" height="200">
+                <img src="img/img12.jpg" width="200" height="200">
+                <img src="img/img13.jpg" width="200" height="200">
+				<img src="img/img14.jpg" width="200" height="200">
+				<img src="img/img15.jpg" width="200" height="200">
+            </div>
+            <div class="categoria" id="galletas">
+                <h3>Galletas</h3>
+				<p>Galletas caseras y deliciosas para disfrutar en cualquier momento.</p>
+                <img src="img/img16.jpg" width="200" height="200">
+                <img src="img/img17.jpg" width="200" height="200">
+                <img src="img/img18.jpg" width="200" height="200">
+				<img src="img/img19.jpg" width="200" height="200">
+				<img src="img/img20.jpg" width="200" height="200">
+            </div>
+            <div class="categoria" id="helados">
+                <h3>Helados</h3>
+				 <p>Variedad de helados para todos los gustos.</p>
+                <img src="img/img21.jpg" width="200" height="200">
+                <img src="img/img22.jpg" width="200" height="200">
+                <img src="img/img23.jpg" width="200" height="200">
+				<img src="img/img24.jpg" width="200" height="200">
+				<img src="img/img25.jpg" width="200" height="200">
+            </div>
+            <div class="categoria" id="postres-especiales">
+                <h3>Postres Especiales</h3>
+				<p>Postres únicos y deliciosos para ocasiones especiales.</p>
+                <img src="img/img26.jpg" width="200" height="200">
+                <img src="img/img27.jpg" width="200" height="200">
+                <img src="img/img28.jpg" width="200" height="200">
+				<img src="img/img29.jpg" width="200" height="200">
+				<img src="img/img30.jpg" width="200" height="200">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  

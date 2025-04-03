@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>La Historia de Dulce Luna</title>
+    <link rel="stylesheet" href="historia.css"> 
+</head>
+<body>
+
+ <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.display = "block";
+                });
+                dropdown.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.display = "none";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Dulce Luna</h1>
+			
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="valores.html">Valores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+  <h1>La Historia de Dulce Luna</h1> 
+	
+
+   
+    <div class="imagen">
+        <img src="img/pastel50.jpg" alt="logo" width="200" height="200">
+    </div>
+
+    
+    <p>La pastelería Dulce Luna fue fundada en el año 2010 por Sofía García, una joven pastelera apasionada que siempre había soñado con abrir su propia pastelería.</p>
+
+    <p>Sofía creció en el barrio de Las Delicias en la ciudad de Azulville, rodeada de la deliciosa comida y los dulces tradicionales de su familia. Desde muy joven, Sofía se interesó por la pastelería y comenzó a ayudar a su madre en la cocina, aprendiendo los secretos de la repostería.</p>
+
+    <p>Después de completar sus estudios en una escuela culinaria de renombre, Sofía trabajó en varias pastelerías de la ciudad, perfeccionando su técnica y desarrollando su propio estilo. Sin embargo, siempre sintió que algo faltaba, y ese algo era su propia pastelería.</p>
+
+    <p>Un día, mientras caminaba por el barrio de Las Delicias, Sofía encontró un local vacío en la Calle Principal, frente al parque La Fuente. Fue amor a primera vista. La luz natural que entraba por las ventanas, la ubicación perfecta y el espacio amplio y acogedor la convencieron de que ese era el lugar perfecto para su pastelería.</p>
+
+    <p>Sofía pasó meses diseñando y construyendo su pastelería, desde el suelo hasta el techo. Quería que Dulce Luna fuera un refugio para los amantes de los dulces, un lugar donde la gente pudiera venir a disfrutar de un delicioso pastel o una taza de café en un ambiente acogedor y relajante.</p>
+
+    <p>Finalmente, el 15 de marzo de 2010, Dulce Luna abrió sus puertas al público por primera vez. La respuesta fue abrumadora. La gente de todo el barrio y la ciudad vino a probar los deliciosos pasteles y a disfrutar del ambiente acogedor de la pastelería.</p>
+
+    <p>Desde entonces, Dulce Luna se ha convertido en la pastelería más popular de Azulville, conocida por sus deliciosos pasteles, su servicio excepcional y su ambiente acogedor. Sofía García sigue siendo la dueña y la pastelera jefe de la pastelería, y sigue trabajando con pasión y dedicación para brindar a sus clientes la mejor experiencia posible.</p>
+
+</body>
+</html>
+
+  <footer>
+        <p>&copy; 2025 Dulce Luna. Todos los derechos reservados. Yarely y Alejandra</p>
+    </footer>
+</body>
+</html>  
